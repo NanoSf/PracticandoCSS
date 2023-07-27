@@ -1,0 +1,17 @@
+h1 span{
+    color: #037bc0;
+}
+
+/** Globales **/
+a{
+    text-decoration: none;
+    color: #000;
+}
+
+
+/** Header y Navegacion **/
+.nombre-sitio{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    text-align: center;
+}
