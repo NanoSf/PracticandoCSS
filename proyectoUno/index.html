@@ -6,44 +6,57 @@
     <title>Ecommers</title>
     <link rel="stylesheet" href="app/normalizer.css">
     <link rel="stylesheet" href="app/app.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Raleway:wght@400;700;900&display=swap" rel="stylesheet">
 </head>
 <body>
     <header> 
         <h1 class="nombre-sitio">Tienda <span>Muebles</span></h1>
     </header>
 
-    <nav class="navegacion">
-        <a class="enlace" href="index.html">Inicio</a>
-        <a class="enlace" href="src/nosotros/nosotros.html">Nosotros</a>
-        <a class="enlace" href="src/tienda/tienda.html">Tienda</a>
-        <a class="enlace" href="src/blog/blog.html">Blog</a>
-        <a class="enlace" href="src/galeria/galeria.html">Galeria</a>
-        <a class="enlace" href="src/contacto/contacto.html">Contacto</a>
-    </nav>
+    <div class="contenedor-navegacion">
+        <nav class="nav-principal contenedor">
+            <a class="enlace" href="index.html">Inicio</a>
+            <a class="enlace" href="src/nosotros/nosotros.html">Nosotros</a>
+            <a class="enlace" href="src/tienda/tienda.html">Tienda</a>
+            <a class="enlace" href="src/blog/blog.html">Blog</a>
+            <a class="enlace" href="src/galeria/galeria.html">Galeria</a>
+            <a class="enlace" href="src/contacto/contacto.html">Contacto</a>
+        </nav>
+    </div>
 
-    <section>
+    <div class="hero">
+
+    </div>
+
+    <section class="contenedor categorias">
         <h2>Categorías de <span>Productos</span></h2>
 
-        <div>
-            <img src="img/categoria1.jpg" alt="Imagen Categoria">
-            <a href="#">Oficina</a>
-        </div>
-
-        <div>
-            <img src="img/categoria2.jpg" alt="Imagen Categoria">
-            <a href="#">Hogar</a>
-        </div>
-
-        <div>
-            <img src="img/categoria3.jpg" alt="Imagen Categoria">
-            <a href="#">Cocina</a>
+        <div class="listado-categorias">
+            <div class="categoria">
+                <img src="img/categoria1.jpg" alt="Imagen Categoria">
+                <a href="#">Oficina</a>
+            </div>
+    
+            <div class="categoria">
+                <img src="img/categoria2.jpg" alt="Imagen Categoria">
+                <a href="#">Hogar</a>
+            </div>
+    
+            <div class="categoria">
+                <img src="img/categoria3.jpg" alt="Imagen Categoria">
+                <a href="#">Cocina</a>
+            </div>
         </div>
     </section>
 
-    <section>
-        <div>   
-            <h2>Sobre Nosotros</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae, fugit! Debitis quisquam nihil repellat amet dolore sit expedita, ipsam possimus aliquam. Quidem fugit laudantium ipsam eaque facere unde delectus doloribus.</p>
+    <section class="sobre-nosotros">
+        <div class="contenedor sobre-nosotros-grid">   
+            <div class="texto-nosotros">
+                <h2>Sobre Nosotros</h2>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. In, dolorem, magnam consequatur consectetur eaque quia veniam assumenda accusamus quos esse veritatis explicabo. Voluptate et fugiat pariatur! Necessitatibus minima odio laborum?,Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut molestiae deleniti recusandae at quisquam reprehenderit consequuntur voluptas. Itaque quis magni, quos earum repellat deleniti amet numquam voluptate deserunt perferendis quibusdam.</p>
+            </div>
         </div>
     </section>
 
