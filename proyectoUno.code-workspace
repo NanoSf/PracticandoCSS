@@ -7,5 +7,7 @@
 			"path": "02-flexbox-basicos"
 		}
 	],
-	"settings": {}
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "02-flexbox-basicos"
+	}
 }

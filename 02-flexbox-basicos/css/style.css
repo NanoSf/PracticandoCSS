@@ -106,3 +106,62 @@ h1, h2 {
     height: 800px;
     align-items: flex-end;
 }
+
+/** 7 **/
+/**! Si flex-direction es column justify-content alinea vertical y align-items de manera horizontal**/
+/**! Si flex-direction es row justify-content alinea horizontal y align-items de manera vertical**/
+.d-flex-7{
+    display: flex;
+    height: 800px;
+
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+/** 8 **/
+.d-flex-8{
+    display: flex;
+}
+
+/** flex-basis no fuerza al elemento a medir el tamaño en caso de que su contenido sea mas grande **/
+.d-flex-8 .box{
+    flex-basis: 33.3%;
+    flex-basis: 200px;
+}
+
+/** 9 **/
+.d-flex-9{
+    display: flex;
+    justify-content: space-between;
+    /**! gap: 2rem; -> gap agrega espacio entre los hijos del elemento contenedor**/
+}
+
+.d-flex-9 .box{
+    flex-basis: calc(50% - 1rem);
+}
+
+.d-flex-9 .box:nth-child(2),
+.d-flex-9 .box:nth-child(3){
+    flex-basis: calc(25% - 1rem);
+}
+
+/** 10 **/
+.d-flex-10{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.d-flex-10 .box{
+    flex-basis: 33.3%;
+}
+
+/** 11 **/
+.d-flex-11{
+    display: flex;
+}
+
+.d-flex-11 .box{
+    flex-grow: 1;
+}
+
