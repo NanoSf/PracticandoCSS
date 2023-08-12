@@ -161,7 +161,41 @@ h1, h2 {
     display: flex;
 }
 
-.d-flex-11 .box{
+.d-flex-11 .box:nth-child(1){
+    flex-grow: 2;
+}
+
+.d-flex-11 .box:nth-child(2){
     flex-grow: 1;
 }
 
+.d-flex-11 .box:nth-child(3){
+    flex-grow: 1;
+}
+
+/** 12 **/
+.d-flex-12{
+    display: flex;
+}
+
+.d-flex-12 .box{
+    flex-grow: 1;
+    flex-basis: 300px;
+}
+
+.d-flex-12 .box:nth-child(3){
+    flex-shrink: 2;
+}
+
+/** 13 **/
+.d-flex-13{
+    display: flex;
+}
+
+.d-flex-13 .box{
+    flex-basis: 33.3%;
+    flex-grow: 1;
+    flex-shrink: 1;
+
+    flex: 1 0 33.3%;
+}
