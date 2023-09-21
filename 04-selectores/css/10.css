@@ -1,0 +1,18 @@
+/** ^ para decirle que inicie y $ para decirle que termina 
+a[href^=".com"]{ INICIA
+    color: red;
+}
+
+a[href$=".com"]{ FINALIZA
+    color: red;
+}
+
+**/
+
+a[href$=".com"]{
+    color: red;
+}
+
+input[type="tel"]{
+    border: 5px solid red;
+}

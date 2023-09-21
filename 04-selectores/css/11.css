@@ -1,0 +1,9 @@
+ul li:first-child{
+    border: 2px solid red;
+}
+
+ul li:first-of-type{
+    border: 2px solid red;
+}
+
+/** UNO SELECCIONA EL PRIMER HIJO EL OTRO EL PRIMERO TIPO  **/
