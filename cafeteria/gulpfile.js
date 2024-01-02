@@ -1,4 +1,4 @@
-const { src, dest, watch } = require('gulp');
+const { src, dest, watch, series, parallel } = require('gulp');
 const sass = require('gulp-sass')(require('sass'));
 const postcss = require('gulp-postcss');
 const autoprefixer = require('autoprefixer');
@@ -15,8 +15,14 @@ function css(done){
 }
 
 function dev(){
-    watch('src/scss/app.scss', css);
+    //watch revisa cualquier cambio en algun archivo y si se modifica lanza un metodo
+    //watch('src/scss/app.scss', css); --> tambien puede observar unicamente el que seleccione
+    watch('src/scss/**/*.scss', css); // -> observa cualquier archivo .scss
 }
 
 exports.css = css;
 exports.dev = dev;
+exports.default = series(css,dev);
+
+//series-Inicia una tarea la termina y ejecuta la otra
+//parallel-Todas inicias al mismo tiempo
